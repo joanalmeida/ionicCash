@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { User } from '../../models/user';
 
 /*
   Generated class for the AuthProvider provider.
@@ -15,10 +16,22 @@ export class AuthProvider {
 
   }
 
-  logIn(): boolean {
-    this.loggedIn = true;
+  logIn(user: User): Promise<boolean> {
+    let requestLogIn = new Promise<boolean>((resolve, reject) => {
+      if(!user.username) reject("No se recibio nombre de usuario") 
 
-    return this.loggedIn;
+      //Mock pegada http con resultado verdadero
+      setTimeout(() => {
+        resolve(true)
+      }, 3000)
+    })
+
+    return requestLogIn;
+
+    //requestLogIn().then()
+    //this.loggedIn = true;
+
+    //return this.loggedIn;
   }
 
   isLoggedIn(): boolean {

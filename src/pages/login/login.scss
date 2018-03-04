@@ -1,3 +1,62 @@
 page-login {
+    .scroll-content {
+        align-content: center;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
 
+    .boton-principal {
+        border-radius: 4px;
+        height: 4.6rem;
+        box-shadow: none;
+        margin-bottom: 25px;
+    }
+
+    .registrarse {
+        background-color: white;
+        color: black;
+        border: 2px solid black;
+        min-height: 46px;
+    }
+
+    .registrarse.activated {
+        background-color: white;
+        box-shadow: none;
+    }
+
+    .forgot-password {
+        color: #999;
+    }
+    
+    .inputs {
+        margin-bottom: 25px;
+    }
+
+    .input-list {
+        padding-left: 0px;
+    }
+
+    .login-footer {
+        display: block;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        position: absolute;
+        height: 13px;
+    }
+
+    .red-footer {
+        height: inherit;
+        background-color: color($colors, primary);
+        width: 50%;
+        float: left;
+    }
+
+    .blue-footer {
+        height: inherit;
+        background-color: color($colors, azul);
+        width: 50%;
+        float: right;
+    }
 }

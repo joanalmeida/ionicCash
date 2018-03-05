@@ -17,7 +17,7 @@ export class LoginPage {
   constructor(public navCtrl: NavController,
     private auth: AuthProvider,
     private loadingCtrl: LoadingController) {
-      this.user = new User({username: null, password: null})
+      this.user = new User({username: null, password: null, name: null})
   }
 
   logIn(userInfo) {

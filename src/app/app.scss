@@ -14,3 +14,54 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+.col {
+    padding: 0px;
+}
+
+.boton-principal {
+    border-radius: 4px;
+    height: 4.6rem;
+    box-shadow: none;
+    margin-bottom: 25px;
+}
+
+.inputs-list {
+    margin-bottom: 25px;
+}
+
+.input-list-item {
+    padding-left: 0px;
+}
+
+.select-md .select-icon {
+    position: absolute;
+    right: 15px;
+}
+
+.select-md {
+    padding-left: 8px;
+}
+
+.main-footer {
+    display: block;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    height: 13px;
+    z-index: 10px;
+}
+
+.red-footer {
+    height: inherit;
+    background-color: color($colors, primary);
+    width: 50%;
+    float: left;
+}
+
+.blue-footer {
+    height: inherit;
+    background-color: color($colors, azul);
+    width: 50%;
+    float: right;
+}

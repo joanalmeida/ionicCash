@@ -1,11 +1,12 @@
 <ion-content padding>
+  <h2>LOGO</h2>
   <form (ngSubmit)="logIn()">
-    <ion-list class="inputs">
-      <ion-item class="input-list">
+    <ion-list class="inputs-list">
+      <ion-item class="input-list-item">
         <ion-label><ion-icon name="person"></ion-icon></ion-label>
         <ion-input type="text"[(ngModel)]="user.username" name="username" placeholder="User"></ion-input>
       </ion-item>
-      <ion-item class="input-list">
+      <ion-item class="input-list-item">
         <ion-label><ion-icon name="lock"></ion-icon></ion-label>
         <ion-input type="password" [(ngModel)]="user.password" name="password" placeholder="Password"></ion-input>
       </ion-item>
@@ -16,7 +17,7 @@
   <a class="forgot-password">Olvidé mi Password</a>
 </ion-content>
 
-<div class="login-footer">
+<div class="main-footer">
   <div class="red-footer"></div>
   <div class="blue-footer"></div>
 </div>

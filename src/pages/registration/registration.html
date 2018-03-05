@@ -1,9 +1,54 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>registration</ion-title>
-  </ion-navbar>
-</ion-header>
-
-<ion-content>
-  <h3>Registration form here</h3>
+<ion-content padding>
+  <h2>LOGO</h2>
+  <form (ngSubmit)="register()">
+    <ion-list class="inputs-list">
+      <ion-item class="input-list-item">
+        <ion-select interface="action-sheet" placeholder="Vendedor">
+          <ion-option>Opcion 1</ion-option>
+          <ion-option>Opcion 2</ion-option>
+        </ion-select>
+      </ion-item>
+      <ion-item class="input-list-item">
+        <ion-select placeholder="Efectivo Si">
+          <ion-option>Opcion 1</ion-option>
+          <ion-option>Opcion 2</ion-option>
+        </ion-select>
+      </ion-item>
+      <ion-row>
+        <ion-col>
+          <ion-item class="input-list-item">
+            <ion-input type="text" placeholder="Nombre y Apellido" [(ngModel)]="user.name" name="fullname"></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col col-1></ion-col>
+        <ion-col>
+          <ion-item class="input-list-item">
+            <ion-input type="text" placeholder="DNI"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-item class="input-list-item">
+            <ion-input type="text" placeholder="Mail Laboral"></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col col-1></ion-col>
+        <ion-col>
+          <ion-item class="input-list-item">
+            <ion-input type="number" placeholder="Celular"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-item class="input-list-item">
+        <ion-input type="password" placeholder="Password"></ion-input>
+      </ion-item>
+    </ion-list>
+    <button block ion-button type="submit" class="boton-principal">SIGUIENTE</button>
+  </form>
 </ion-content>
+
+<div class="main-footer">
+  <div class="red-footer"></div>
+  <div class="blue-footer"></div>
+</div>

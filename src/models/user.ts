@@ -9,6 +9,7 @@ export class User {
         this.username = userInfo.username;
         this.password = userInfo.password;
         this.role     = "test";
+        this.name     = userInfo.name;
     }
 
     getRole(): String {

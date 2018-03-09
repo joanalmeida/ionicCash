@@ -5,4 +5,16 @@ page-registration {
         flex-direction: column;
         text-align: center;
     }
+
+    .list-md .item-input:last-child {
+        border-bottom: 0px;
+    }
+
+    .last-input .item-inner {
+        border-bottom: 1px solid #dedede !important;
+    }
+
+    ion-select {
+        max-width: 100%;
+    }
 }
